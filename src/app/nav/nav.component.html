@@ -3,10 +3,10 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Date Universe</mat-toolbar>
+    <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="">Date-Ideen</a>
-      <a mat-list-item href="meinedates">Meine Dates</a>
+      <a mat-list-item href="">Date ideas</a>
+      <a mat-list-item href="mydates">My dates</a>
       <a mat-list-item href="impressum">Impressum</a>
     </mat-nav-list>
   </mat-sidenav>
@@ -20,7 +20,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>pwa-du</span>
+      <span>Date Universe</span>
     </mat-toolbar>
     <!-- Add Content Here -->
   </mat-sidenav-content>

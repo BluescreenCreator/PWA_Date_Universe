@@ -1,0 +1,9 @@
+<input #dateInput>
+<button (click)="add(dateInput.value)">Hinzufügen</button>
+<button (click)='sync()'>Sync</button>
+
+<ul>
+    <li *ngFor="let date of dates" [class.done]="date.done">
+        {{ date.title }}
+    </li>
+</ul>

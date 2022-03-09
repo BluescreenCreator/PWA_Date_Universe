@@ -1,13 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import Dexie from 'dexie';
-import { v4 } from 'uuid'; 
+import { v4 } from 'uuid';
 import { Date } from './date';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-
 export class DateService extends Dexie {
   dates!: Dexie.Table<Date, string>;
 
@@ -15,26 +14,28 @@ export class DateService extends Dexie {
     super('DateDB');
 
     this.version(1).stores({
-      dates: 'id'
+      dates: 'id',
     });
-   }
+  }
 
-   getAll(){
-     return this.dates.toArray();
-   }
+  getAll() {
+    return this.dates.toArray();
+  }
 
-   add(title: string){
-    this.dates.add({title, id: v4(), done: false});
+  add(title: string) {
+    this.dates.add({ title, id: v4(), done: false });
   }
 
   toggleDone(date: Date) {
-   date.done = !date.done;
-   return this.dates.put(date); 
+    date.done = !date.done;
+    return this.dates.put(date);
   }
 
   async sync() {
     const allDates = await this.getAll();
-    const syncedDates = await this.httpClient.post<Date[]>('http://localshost:3030/sync', allDates).toPromise();
+    const syncedDates = await this.httpClient
+      .post<Date[]>('http://localshost:3030/sync', allDates)
+      .toPromise();
     this.dates.bulkPut(syncedDates!);
   }
 }

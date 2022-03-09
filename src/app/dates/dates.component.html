@@ -1,9 +1,10 @@
 <input #dateInput />
 <button (click)="add(dateInput.value)">Hinzufügen</button>
-<button (click)="sync()">Sync</button>
+<button (click)="sync()">Aktualisieren</button>
 
 <ul>
   <li *ngFor="let date of dates" [class.done]="date.done">
+    <input type="checkbox" [checked]="date.done" (click)="toggleDone(date)">
     {{ date.title }}
   </li>
 </ul>

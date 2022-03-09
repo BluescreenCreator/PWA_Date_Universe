@@ -26,6 +26,11 @@ export class DatesComponent implements OnInit {
     await this.loadDates();
   }
 
+  async toggleDone(date: Date){
+    await this.dateService.toggleDone(date);
+    await this.loadDates();
+  }
+
   async loadDates() {
     this.dates = await this.dateService.getAll();
   }

@@ -1,15 +1,15 @@
-<input #dateInput />
+<input
+  #dateInput
+  placeholder="Your Date Idea"
+  aria-label="Enter Date Idea"
+  required="required"
+/>
 <button aria-label="Add Date" (click)="add(dateInput.value)">Add</button>
 <button aria-label="Synchronise Date Ideas" (click)="sync()">Sync</button>
 
 <ul>
   <li *ngFor="let date of dates" [class.done]="date.done">
-    <input
-      aria-label="Enter Date Idea"
-      type="checkbox"
-      [checked]="date.done"
-      (click)="toggleDone(date)"
-    />
+    <input type="checkbox" [checked]="date.done" (click)="toggleDone(date)" />
     {{ date.title }}
   </li>
 </ul>

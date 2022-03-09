@@ -1,5 +1,10 @@
 <app-nav>
-  <button aria-label="Register for Push Notifications" (click)="subscribe()">
+  <button
+    mat-flat-button
+    color="accent"
+    aria-label="Register for Push Notifications"
+    (click)="subscribe()"
+  >
     Push Notification
   </button>
   <router-outlet></router-outlet>

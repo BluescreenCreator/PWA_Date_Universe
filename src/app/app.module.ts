@@ -16,9 +16,10 @@ import { MatListModule } from '@angular/material/list';
 import { MydatesComponent } from './mydates/mydates.component';
 import { DatesComponent } from './dates/dates.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, MydatesComponent, DatesComponent],
+  declarations: [AppComponent, NavComponent, MydatesComponent, DatesComponent, AboutComponent],
   imports: [
     HttpClientModule,
     BrowserModule,
@@ -36,6 +37,12 @@ import { HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

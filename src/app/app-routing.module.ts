@@ -5,7 +5,7 @@ import { MydatesComponent } from './mydates/mydates.component';
 
 const routes: Routes = [
   { path: '', component: DatesComponent},
-  { path: 'MyDates', component: MydatesComponent}
+  { path: 'mydates', component: MydatesComponent}
 ];
 
 @NgModule({

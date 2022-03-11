@@ -1,3 +1,11 @@
 .textAbout {
     color: white;
+    font-size: 12pt;
+    margin: 60px 30px 30px 30px;
+}
+
+.h1{
+    font-size: 16pt;
+    font-weight: 700;
+    margin-bottom: 20px;
 }

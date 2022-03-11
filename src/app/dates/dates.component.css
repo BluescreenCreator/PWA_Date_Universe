@@ -5,6 +5,7 @@ ul {
 .head-dates{
 position: absolute;
 top: 40%;
+font-size: 12pt;
 }
 
 .h1{
@@ -21,6 +22,7 @@ button{
   color: white;
   margin: 15px;
   border-radius: 12px;
+  font-size: 12pt;
 }
 
 input{
@@ -29,7 +31,20 @@ input{
   min-height: 30px;
   min-width: 80px;
   color: #E615BA;
-  padding-left: 3px; 
+  padding-left: 10px; 
+  font-size: 12pt;
 }
 
+.inputSection{
+  margin-top: 20px;
+  display: inline-flex;
+  float:left;
+  flex-wrap: wrap;
+}
+
+.sync{
+  display: inline-flex;
+  float:right;
+  flex-wrap: wrap;
+}
 

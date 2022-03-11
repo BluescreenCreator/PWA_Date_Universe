@@ -39,10 +39,11 @@
 
 <div class="listSection">
   <ul>
-    <li *ngFor="let date of dates" [class.done]="date.done">
+    <li *ngFor="let date of dates" [class.done]="date.done" class="dateEntry">
       <input type="checkbox" [checked]="date.done" (click)="toggleDone(date)" />
-      {{ date.title }}  {{ date.category }}
-      <button>Move To My Dates</button>
+      {{ date.title }} <br />
+      {{ date.category }} <br />
+      <button class="btn" mat-flat-button></button>
     </li>
   </ul>
 </div>

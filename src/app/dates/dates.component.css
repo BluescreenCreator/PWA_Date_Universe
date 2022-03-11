@@ -2,34 +2,56 @@ ul {
   list-style-type: none;
 }
 
-.head-dates{
-position: absolute;
-top: 40%;
+.head-dates {
+  position: absolute;
+  top: 40%;
 }
 
-.h1{
-font-weight: 400;
-font-size: 40px;
-color: #ffffff;
-line-height: 1.2;
-text-transform: uppercase;
-letter-spacing: 0.2em;
+.h1 {
+  font-weight: 400;
+  font-size: 40px;
+  color: #ffffff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
-button{
-  background-color: #E615BA;
+button {
+  background-color: #e615ba;
   color: white;
   margin: 15px;
   border-radius: 12px;
 }
 
-input{
+#dateInput {
   border-radius: 12px;
   margin: 15px;
   min-height: 30px;
   min-width: 80px;
-  color: #E615BA;
-  padding-left: 3px; 
+  color: #e615ba;
+  padding-left: 3px;
 }
 
+.dateEntry {
+  border-radius: 12px;
+  background-color: #9b8ee3;
+  text-align: center;
+  width: 320px;
+  height: 180px;
+  display: inline-flex;
+  float: left;
+  margin: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
 
+.btn {
+  background-color: #e615ba;
+  color: white;
+  margin: 15px;
+  border-radius: 15px;
+  float: right;
+  height: 30px;
+  width: 30px;
+  border-radius: 12px;
+}

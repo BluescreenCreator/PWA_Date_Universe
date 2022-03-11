@@ -20,10 +20,10 @@
     <mat-form-field appearance="fill">
       <mat-label>Date Category</mat-label>
       <mat-select #dateCategory>
-        <mat-option value="romantic">Romantic</mat-option>
-        <mat-option value="classic">Classic</mat-option>
-        <mat-option value="action">Action</mat-option>
-        <mat-option value="humor">Humor</mat-option>
+        <mat-option value="Romantic">Romantic</mat-option>
+        <mat-option value="Classic">Classic</mat-option>
+        <mat-option value="Action">Action</mat-option>
+        <mat-option value="Humor">Humor</mat-option>
       </mat-select>
     </mat-form-field>
   </div>
@@ -41,7 +41,7 @@
   <ul>
     <li *ngFor="let date of dates" [class.done]="date.done">
       <input type="checkbox" [checked]="date.done" (click)="toggleDone(date)" />
-      {{ date.title }}{{ date.category }}
+      {{ date.title }}   {{ date.category }}
     </li>
   </ul>
 </div>

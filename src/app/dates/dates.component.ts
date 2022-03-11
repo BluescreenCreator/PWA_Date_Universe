@@ -16,10 +16,10 @@ export class DatesComponent implements OnInit {
   dates: Date[] = [];
 
   dateCategory: DateCategory[] = [
-    { value: 'romatic', viewValue: 'Romatic' },
-    { value: 'classic', viewValue: 'Classic' },
-    { value: 'action', viewValue: 'Action' },
-    { value: 'humor', viewValue: 'Humor' },
+    { value: 'Romatic', viewValue: 'Romatic' },
+    { value: 'Classic', viewValue: 'Classic' },
+    { value: 'Action', viewValue: 'Action' },
+    { value: 'Humor', viewValue: 'Humor' },
   ];
 
   constructor(private dateService: DateService) {}

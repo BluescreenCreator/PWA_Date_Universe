@@ -9,6 +9,12 @@
 </button>
 <br />
 
+<div class="headings">
+  <h1>This is your Date Universe!</h1>
+  <h2>Never forget your best ideas ever again...</h2>
+
+  <h3>You can add new date ideas here</h3>
+</div>
 <div class="inputSection">
   <input
     #dateInput
@@ -40,8 +46,11 @@
 
 <br />
 <br />
-<br />
 
+<div class="headings">
+  <h3>These are your best ideas, looks so fun!</h3>
+</div>
+<br />
 <div class="listSection">
   <ul>
     <li *ngFor="let date of dates" [class.done]="date.done" class="dateCard">

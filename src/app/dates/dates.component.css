@@ -1,3 +1,24 @@
+.h1 {
+  font-size: 16pt;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.h2 {
+  font-size: 14pt;
+  margin-bottom: 40px;
+}
+
+.h3 {
+  font-size: 12pt;
+  margin-top: 40px;
+}
+
+.headings {
+  color: white;
+  margin: 60px 0px 0px 30px;
+}
+
 ul {
   list-style-type: none;
 }
@@ -25,18 +46,26 @@ button {
   font-size: 12pt;
 }
 
+input {
+  font-size: 12pt;
+}
+
+li {
+  margin-top: 30px;
+}
+
 .dateCard {
   border-radius: 12px;
   background-color: #9b8ee3;
   text-align: center;
-  width: 320px;
-  height: 180px;
+  width: 300px;
+  height: 170px;
   display: inline-flex;
   float: left;
   margin: 20px 40px 20px;
   flex-wrap: wrap;
   padding: 20px;
-  color: #e615ba;
+  color: white;
   padding-left: 10px;
   font-size: 12pt;
 }
@@ -75,4 +104,10 @@ button {
   width: 30px;
   border-radius: 12px;
   text-align: center;
+}
+
+.mat-form-field-infix {
+  background-color: white;
+  font-size: 12pt;
+  border-radius: 12px;
 }

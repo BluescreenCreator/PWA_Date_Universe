@@ -1,7 +1,12 @@
 button{
-    background-color: #E615BA;
-    color: white;
-    margin: 15px;
-    border-radius: 12px;
-  }
+  background-color: #E615BA;
+  color: white;
+  margin: 15px 15px 15px 5px;
+  border-radius: 12px;
+  font-size: 12pt;
+  display: inline-flex;
+  float:right;
+  flex-wrap: wrap;
+}
+
   

@@ -1,5 +1,5 @@
-
-<button class="sync"
+<button
+  class="sync"
   mat-flat-button
   color="#E615BA"
   aria-label="Synchronise Date Ideas"
@@ -7,12 +7,12 @@
 >
   Sync
 </button>
-<br/>
-
+<br />
 
 <div class="inputSection">
   <input
     #dateInput
+    class="ideaInput"
     placeholder="Your Date Idea"
     aria-label="Enter Date Idea"
     required="required"
@@ -38,13 +38,19 @@
   </button>
 </div>
 
+<br />
+<br />
+<br />
+
 <div class="listSection">
   <ul>
-    <li *ngFor="let date of dates" [class.done]="date.done" class="dateEntry">
+    <li *ngFor="let date of dates" [class.done]="date.done" class="dateCard">
       <input type="checkbox" [checked]="date.done" (click)="toggleDone(date)" />
       {{ date.title }} <br />
       {{ date.category }} <br />
-      <button class="btn" mat-flat-button></button>
+      <button class="btn" mat-flat-button>
+        <img src="/assets/bilder/herz.png" width="25px" height="auto" />
+      </button>
     </li>
   </ul>
 </div>

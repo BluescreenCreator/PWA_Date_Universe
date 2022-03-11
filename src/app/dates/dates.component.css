@@ -25,16 +25,7 @@ button {
   font-size: 12pt;
 }
 
-#dateInput {
-  border-radius: 12px;
-  margin: 15px;
-  min-height: 30px;
-  min-width: 80px;
-  color: #e615ba;
-  padding-left: 3px;
-}
-
-.dateEntry {
+.dateCard {
   border-radius: 12px;
   background-color: #9b8ee3;
   text-align: center;
@@ -42,7 +33,7 @@ button {
   height: 180px;
   display: inline-flex;
   float: left;
-  margin: 20px;
+  margin: 20px 40px 20px;
   flex-wrap: wrap;
   padding: 20px;
   color: #e615ba;
@@ -50,8 +41,19 @@ button {
   font-size: 12pt;
 }
 
+.ideaInput {
+  border-radius: 12px;
+  margin: 15px;
+  min-height: 30px;
+  min-width: 80px;
+  color: #e615ba;
+  padding-left: 10px;
+  font-size: 12pt;
+}
+
 .inputSection {
   margin-top: 20px;
+  margin-bottom: 20px;
   display: inline-flex;
   float: left;
   flex-wrap: wrap;
@@ -69,7 +71,8 @@ button {
   margin: 15px;
   border-radius: 15px;
   float: right;
-  height: 30px;
+  height: 45px;
   width: 30px;
   border-radius: 12px;
+  text-align: center;
 }

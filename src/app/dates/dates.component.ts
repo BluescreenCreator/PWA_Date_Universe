@@ -10,7 +10,14 @@ import { Date } from '../date';
 export class DatesComponent implements OnInit {
   dates: Date[] = [];
 
-  constructor(private dateService: DateService) { }
+  dateCategory: DateCategory[] = [
+    { value: 'Romatic', viewValue: 'Romatic' },
+    { value: 'Classic', viewValue: 'Classic' },
+    { value: 'Action', viewValue: 'Action' },
+    { value: 'Humor', viewValue: 'Humor' },
+  ];
+
+  constructor(private dateService: DateService) {}
 
   ngOnInit(): void {
     this.loadDates();

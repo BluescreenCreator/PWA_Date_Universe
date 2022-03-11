@@ -16,11 +16,22 @@
     aria-label="Enter Date Idea"
     required="required"
   />
+  <div class="category">
+    <mat-form-field appearance="fill">
+      <mat-label>Category</mat-label>
+        <select #dateCategory matNativeControl required>
+          <option value="romantic">Romantic</option>
+          <option value="classic">Classic</option>
+          <option value="action">Action</option>
+          <option value="humor">Humor</option>
+        </select>
+    </mat-form-field>
+  </div>
   <button
     mat-flat-button
     color="accent"
     aria-label="Add your date idea"
-    (click)="add(dateInput.value)"
+    (click)="add(dateInput.value, dateCategory.value)"
   >
     Add
   </button>

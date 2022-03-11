@@ -17,11 +17,20 @@ import { MydatesComponent } from './mydates/mydates.component';
 import { DatesComponent } from './dates/dates.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './about/about.component';
+import { MatSelectModule } from '@angular/material/select';
+import { MatNativeDateModule } from '@angular/material/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [AppComponent, NavComponent, MydatesComponent, DatesComponent, AboutComponent],
   imports: [
     HttpClientModule,
+    MatNativeDateModule,
+    MatSelectModule,
+    FormsModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

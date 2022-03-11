@@ -22,8 +22,8 @@ export class DateService extends Dexie {
     return this.dates.toArray();
   }
 
-  add(title: string) {
-    this.dates.add({ title, id: v4(), done: false });
+  add(title: string, category: string) {
+    this.dates.add({ title, category, id: v4(), done: false });
   }
 
   toggleDone(date: Date) {

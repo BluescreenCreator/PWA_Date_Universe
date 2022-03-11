@@ -9,15 +9,7 @@
   </button>
 </div>
 
-
-
 <div class="inputSection">
-<div class="head-dates">
-  <div class="h1">Find your<br/>perfect date<br/>tonight</div>
-
-  <button mat-flat-button color="accent">finde ideen</button>
-</div>
-
   <input
     #dateInput
     placeholder="Your Date Idea"
@@ -28,10 +20,10 @@
     <mat-form-field appearance="fill">
       <mat-label>Date Category</mat-label>
       <mat-select #dateCategory>
-        <mat-option value="Romantic">Romantic</mat-option>
-        <mat-option value="Classic">Classic</mat-option>
-        <mat-option value="Action">Action</mat-option>
-        <mat-option value="Humor">Humor</mat-option>
+        <mat-option value="romantic">Romantic</mat-option>
+        <mat-option value="classic">Classic</mat-option>
+        <mat-option value="action">Action</mat-option>
+        <mat-option value="humor">Humor</mat-option>
       </mat-select>
     </mat-form-field>
   </div>
@@ -39,7 +31,7 @@
     mat-flat-button
     color="accent"
     aria-label="Add your date idea"
-    (click)="add(dateInput.value)"
+    (click)="add(dateInput.value, dateCategory.value)"
   >
     Add
   </button>
@@ -49,11 +41,7 @@
   <ul>
     <li *ngFor="let date of dates" [class.done]="date.done">
       <input type="checkbox" [checked]="date.done" (click)="toggleDone(date)" />
-<<<<<<< HEAD
-      {{ date.title }}
-=======
-      {{ date.title }}   {{ date.category }}
->>>>>>> cc02648965954f664f17f5ff752d6bd7c21edc35
+      {{ date.title }}  {{ date.category }}
     </li>
   </ul>
 </div>

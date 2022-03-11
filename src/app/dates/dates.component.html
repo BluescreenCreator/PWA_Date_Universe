@@ -42,6 +42,7 @@
     <li *ngFor="let date of dates" [class.done]="date.done">
       <input type="checkbox" [checked]="date.done" (click)="toggleDone(date)" />
       {{ date.title }}  {{ date.category }}
+      <button>Move To My Dates</button>
     </li>
   </ul>
 </div>

@@ -15,3 +15,21 @@ line-height: 1.2;
 text-transform: uppercase;
 letter-spacing: 0.2em;
 }
+
+button{
+  background-color: #E615BA;
+  color: white;
+  margin: 15px;
+  border-radius: 12px;
+}
+
+input{
+  border-radius: 12px;
+  margin: 15px;
+  min-height: 30px;
+  min-width: 80px;
+  color: #E615BA;
+  padding-left: 3px; 
+}
+
+

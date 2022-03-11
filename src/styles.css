@@ -3,12 +3,18 @@
 html, body { height: 100%; }
 body { 
     margin: 0; 
-    font-family: 'Open Sans', sans-serif; }
+    font-family: 'Open Sans', sans-serif;
+   }
 
 .mat-drawer-content{
     background-color:#16034A;
   }
 
 ul {
-    color: white;
+  margin: 0;
+  color: white;
 }
+
+.mat-select-option {
+    color: #E615BA;
+  }

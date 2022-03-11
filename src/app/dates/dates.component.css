@@ -1,3 +1,17 @@
 ul {
   list-style-type: none;
 }
+
+.head-dates{
+position: absolute;
+top: 40%;
+}
+
+.h1{
+font-weight: 400;
+font-size: 40px;
+color: #ffffff;
+line-height: 1.2;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+}

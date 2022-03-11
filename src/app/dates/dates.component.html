@@ -18,13 +18,13 @@
   />
   <div class="category">
     <mat-form-field appearance="fill">
-      <mat-label>Category</mat-label>
-        <select #dateCategory matNativeControl required>
-          <option value="romantic">Romantic</option>
-          <option value="classic">Classic</option>
-          <option value="action">Action</option>
-          <option value="humor">Humor</option>
-        </select>
+      <mat-label>Date Category</mat-label>
+      <mat-select #dateCategory>
+        <mat-option value="romantic">Romantic</mat-option>
+        <mat-option value="classic">Classic</mat-option>
+        <mat-option value="action">Action</mat-option>
+        <mat-option value="humor">Humor</mat-option>
+      </mat-select>
     </mat-form-field>
   </div>
   <button
@@ -41,7 +41,7 @@
   <ul>
     <li *ngFor="let date of dates" [class.done]="date.done">
       <input type="checkbox" [checked]="date.done" (click)="toggleDone(date)" />
-      {{ date.title }}
+      {{ date.title }}{{ date.category }}
     </li>
   </ul>
 </div>

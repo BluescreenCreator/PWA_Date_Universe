@@ -1,17 +1,29 @@
-.h1 {
-  font-size: 16pt;
-  font-weight: 700;
-  margin-bottom: 30px;
+h1 {
+  font-size: 50pt;
+  font-weight: 800;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
 }
 
-.h2 {
+h2 {
   font-size: 14pt;
   margin-bottom: 40px;
+  letter-spacing: 0.1em;
 }
 
-.h3 {
+h3 {
   font-size: 12pt;
   margin-top: 40px;
+}
+h4 {
+  font-size: 50pt;
+  font-weight: 800;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #e615ba;
 }
 
 .headings {
@@ -29,14 +41,6 @@ ul {
   font-size: 12pt;
 }
 
-.h1 {
-  font-weight: 400;
-  font-size: 40px;
-  color: #ffffff;
-  line-height: 1.2;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-}
 
 button {
   background-color: #e615ba;

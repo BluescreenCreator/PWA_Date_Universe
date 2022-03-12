@@ -64,7 +64,6 @@ li {
   width: 260px;
   height: 150px;
   display: inline-flex;
-  float: left;
   margin: 20px 40px 20px;
   flex-wrap: wrap;
   padding: 30px;

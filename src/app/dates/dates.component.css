@@ -78,11 +78,11 @@ li {
   color: #e615ba;
   padding-left: 10px;
   font-size: 14pt;
-  margin-top: 5px;
+  margin: 5px 0px 0px 20px;
 }
 
 .inputSection {
-  margin: 30px;
+  margin: 10px;
   display: inline-flex;
   flex-wrap: wrap;
 }

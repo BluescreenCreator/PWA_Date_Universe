@@ -41,3 +41,12 @@ ul {
 .mat-form-field-hint-wrapper {
   padding: 0%;
 }
+
+.mat-form-field-appearance-fill {
+  padding: 0px;
+  margin-left: 20px;
+}
+
+.mat-select-arrow-wrapper {
+  left: 15px;
+}

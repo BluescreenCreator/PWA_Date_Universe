@@ -13,7 +13,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { MydatesComponent } from './mydates/mydates.component';
 import { DatesComponent } from './dates/dates.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './about/about.component';
@@ -23,7 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, MydatesComponent, DatesComponent, AboutComponent],
+  declarations: [AppComponent, NavComponent, DatesComponent, AboutComponent],
   imports: [
     HttpClientModule,
     BrowserModule,

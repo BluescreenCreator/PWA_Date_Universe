@@ -26,17 +26,8 @@ export class DateService extends Dexie {
     this.dates.add({ title, category, id: v4(), done: false });
   }
 
-  /*
-  getCurrentId(title: string, category: string) {
-    const currentID = this.dates.get({title: title, category: category});
-    return currentID;
-  }
-  */
-
-  deleteDate(title: string, category: string) {
-    const currentItem = this.dates.get({title: title, category: category});
-    const currentID = currentItem.
-    this.dates.delete(currentId);
+  deleteDate(id: string) {
+    this.dates.delete(id);
   }
 
   toggleDone(date: Date) {

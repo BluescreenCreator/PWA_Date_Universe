@@ -33,9 +33,8 @@ export class DatesComponent implements OnInit {
     await this.loadDates();
   }
 
-  async deleteDate(title: string, category: string) {
-    await alert("Delete Date!");
-    await this.dateService.deleteDate(title, category);
+  async deleteDate(id: string) {
+    await this.dateService.deleteDate(id);
     await this.loadDates();
   }
 

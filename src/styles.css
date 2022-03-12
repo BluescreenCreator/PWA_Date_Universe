@@ -24,9 +24,20 @@ ul {
 
 .mat-form-field-infix {
   background-color: white !important;
-  font-size: 12pt !important;
+  font-size: 14pt !important;
   border-radius: 12px !important;
-  left: 10px !important;
+  padding-left: 10px !important;
   color: #e615ba !important;
 }
 
+.mat-select-min-line {
+  color: #e615ba !important;
+}
+
+.mat-select {
+  margin-left: 10px;
+}
+
+.mat-form-field-hint-wrapper {
+  padding: 0%;
+}

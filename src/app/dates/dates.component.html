@@ -21,6 +21,7 @@
       height="auto"
       style="float: left"
   /></span>
+  <br />
 
   <h3>You can add new date ideas here</h3>
 </div>
@@ -55,25 +56,29 @@
 
 <br />
 <br />
-<span
-  ><img
+<span>
+  <img
     src="/assets/bilder/ufo3.png"
     width="220px"
     height="auto"
-    style="float: left"
-/></span>
+    style="float: right"
+  />
+  <br />
+</span>
 
 <div class="headings">
+  <br />
   <h3>These are your best ideas, looks so fun!</h3>
+  <br />
 </div>
-<br />
+
 <div class="listSection">
   <ul>
     <li *ngFor="let date of dates" [class.done]="date.done" class="dateCard">
       <input type="checkbox" [checked]="date.done" (click)="toggleDone(date)" />
-      <div>{{ date.title }}</div>
+      <div class="cardTitle">{{ date.title }}</div>
       <br />
-      <div>{{ date.category }}</div>
+      <div class="cardCat">{{ date.category }}</div>
       <br />
       <button class="btn" mat-flat-button (click)="deleteDate(date.id)">
         <img src="/assets/bilder/herz.png" width="25px" height="auto" />

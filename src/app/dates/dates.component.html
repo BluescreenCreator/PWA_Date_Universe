@@ -46,6 +46,13 @@
 
 <br />
 <br />
+<span
+  ><img
+    src="/assets/bilder/ufo3.png"
+    width="220px"
+    height="auto"
+    style="float: left"
+/></span>
 
 <div class="headings">
   <h3>These are your best ideas, looks so fun!</h3>
@@ -55,8 +62,10 @@
   <ul>
     <li *ngFor="let date of dates" [class.done]="date.done" class="dateCard">
       <input type="checkbox" [checked]="date.done" (click)="toggleDone(date)" />
-      {{ date.title }} <br />
-      {{ date.category }} <br />
+      <div>{{ date.title }}</div>
+      <br />
+      <div>{{ date.category }}</div>
+      <br />
       <button class="btn" mat-flat-button>
         <img src="/assets/bilder/herz.png" width="25px" height="auto" />
       </button>

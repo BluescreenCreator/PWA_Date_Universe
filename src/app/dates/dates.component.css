@@ -14,7 +14,7 @@ h2 {
 }
 
 h3 {
-  font-size: 12pt;
+  font-size: 14pt;
   margin-top: 40px;
 }
 h4 {
@@ -38,9 +38,8 @@ ul {
 .head-dates {
   position: absolute;
   top: 40%;
-  font-size: 12pt;
+  font-size: 14pt;
 }
-
 
 button {
   background-color: #e615ba;
@@ -51,7 +50,7 @@ button {
 }
 
 input {
-  font-size: 12pt;
+  font-size: 14pt;
 }
 
 li {
@@ -62,31 +61,29 @@ li {
   border-radius: 12px;
   background-color: #9b8ee3;
   text-align: center;
-  width: 300px;
-  height: 170px;
+  width: 260px;
+  height: 150px;
   display: inline-flex;
   float: left;
   margin: 20px 40px 20px;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 30px;
   color: white;
-  padding-left: 10px;
-  font-size: 12pt;
+  font-size: 14pt;
 }
 
 .ideaInput {
   border-radius: 12px;
-  margin: 15px;
-  min-height: 30px;
+  height: 55px;
   min-width: 80px;
   color: #e615ba;
   padding-left: 10px;
-  font-size: 12pt;
+  font-size: 14pt;
+  margin-top: 5px;
 }
 
 .inputSection {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 30px;
   display: inline-flex;
   float: left;
   flex-wrap: wrap;
@@ -101,11 +98,21 @@ li {
 .btn {
   background-color: #e615ba;
   color: white;
-  margin: 15px;
   border-radius: 15px;
   float: right;
   height: 45px;
   width: 30px;
   border-radius: 12px;
   text-align: center;
+}
+
+.cardTitle {
+  min-width: 100%;
+  font-size: 18pt;
+  margin-bottom: 40px;
+}
+
+.cardCat {
+  min-width: 100%;
+  font-size: 14pt;
 }

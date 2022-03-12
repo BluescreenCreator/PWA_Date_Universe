@@ -18,12 +18,19 @@ export class DateService extends Dexie {
     });
   }
 
+
+
   getAll() {
     return this.dates.toArray();
   }
 
   add(title: string, category: string) {
     this.dates.add({ title, category, id: v4(), done: false });
+  }
+
+  deleteDate() {
+    
+    this.dates.delete("1dd1bf6a-d12a-4c0b-b734-ef0813d6988b");
   }
 
   toggleDone(date: Date) {

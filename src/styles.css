@@ -1,14 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { 
-    margin: 0; 
-    font-family: 'Open Sans', sans-serif;
-   }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
 
-.mat-drawer-content{
-    background-color:#16034A;
-  }
+.mat-drawer-content {
+  background-color: #16034a;
+}
 
 ul {
   margin: 0;
@@ -16,5 +19,13 @@ ul {
 }
 
 .mat-select-option {
-    color: #E615BA;
-  }
+  color: #e615ba;
+}
+
+.mat-form-field-infix {
+  background-color: white !important;
+  font-size: 12pt !important;
+  border-radius: 12px !important;
+  left: 10px !important;
+  color: #e615ba !important;
+}

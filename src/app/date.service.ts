@@ -18,8 +18,6 @@ export class DateService extends Dexie {
     });
   }
 
-
-
   getAll() {
     return this.dates.toArray();
   }
@@ -28,9 +26,17 @@ export class DateService extends Dexie {
     this.dates.add({ title, category, id: v4(), done: false });
   }
 
-  deleteDate() {
-    
-    this.dates.delete("1dd1bf6a-d12a-4c0b-b734-ef0813d6988b");
+  /*
+  getCurrentId(title: string, category: string) {
+    const currentID = this.dates.get({title: title, category: category});
+    return currentID;
+  }
+  */
+
+  deleteDate(title: string, category: string) {
+    const currentItem = this.dates.get({title: title, category: category});
+    const currentID = currentItem.
+    this.dates.delete(currentId);
   }
 
   toggleDone(date: Date) {

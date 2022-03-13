@@ -7,6 +7,12 @@ interface DateCategory {
   viewValue: string;
 }
 
+interface RandomDate {
+  r_title: string;
+  r_category: string;
+}
+
+
 @Component({
   selector: 'app-dates',
   templateUrl: './dates.component.html',
@@ -21,6 +27,16 @@ export class DatesComponent implements OnInit {
     { value: 'action', viewValue: 'Action' },
     { value: 'humor', viewValue: 'Humor' },
   ];
+
+  
+  randomDate: RandomDate[] = [
+    { r_title: 'test', r_category: 'Romatic' },
+    { r_title: 'test1', r_category: 'Classic' },
+    { r_title: 'test2', r_category: 'Action' },
+    { r_title: 'test3', r_category: 'Humor' },
+  ];
+
+  
 
   constructor(private dateService: DateService) {}
 
@@ -50,5 +66,18 @@ export class DatesComponent implements OnInit {
 
   async loadDates() {
     this.dates = await this.dateService.getAll();
+  }
+
+  
+
+  async createRandomDate() {
+    
+    let randomNumber = 0;
+    randomNumber = Math.floor((Math.random() * 4));
+    
+    this.randomDate.values.toString;
+
+    await this.dateService.add('test', 'romatic');
+    await this.loadDates();
   }
 }

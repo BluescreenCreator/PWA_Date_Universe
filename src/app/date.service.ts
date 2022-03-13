@@ -24,6 +24,9 @@ export class DateService extends Dexie {
 
   add(title: string, category: string) {
     this.dates.add({ title, category, id: v4(), done: false });
+    /*if (category == "Action"){
+      document.getElementsByClassName('dateCard').style.backgroundColor
+    }*/ 
   }
 
   deleteDate(id: string) {

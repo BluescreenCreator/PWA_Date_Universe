@@ -80,8 +80,6 @@ export class DatesComponent implements OnInit {
     this.dates = await this.dateService.getAll();
   }
 
-  
-
   async createRandomDate() {
     var randomNumber = Math.floor(Math.random()*this.randomDate.length);
     var randomDate = this.randomDate[randomNumber];

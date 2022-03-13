@@ -73,12 +73,13 @@ li {
 
 .ideaInput {
   border-radius: 12px;
-  height: 50px;
+  height: 53px;
   min-width: 80px;
   color: #e615ba;
   padding-left: 10px;
   font-size: 14pt;
-  margin-top: 5px;
+  margin-top: 8px;
+  margin-right: 10px;
 }
 
 .inputSection {
@@ -102,6 +103,7 @@ li {
   width: 30px;
   border-radius: 12px;
   text-align: center;
+  margin-left: 200px;
 }
 
 .cardTitle {
@@ -114,3 +116,13 @@ li {
   min-width: 100%;
   font-size: 14pt;
 }
+
+.buttonAdd {
+  margin: 10px;
+  width: 53px;
+  height: 53px;
+}
+
+.randomDate {
+  margin-top: 0px;
+} 

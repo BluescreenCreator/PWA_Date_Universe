@@ -50,6 +50,7 @@
     </mat-form-field>
   </div>
   <button
+    class="buttonAdd"
     mat-flat-button
     color="#E615BA"
     aria-label="Add your date idea"
@@ -76,7 +77,7 @@
 <div class="listSection">
   <ul>
     <li *ngFor="let date of dates" [class.done]="date.done" class="dateCard">
-      <input type="checkbox" [checked]="date.done" (click)="toggleDone(date)" />
+      <input type="checkbox" name="checkbox" [checked]="date.done" (click)="toggleDone(date)" />
       <div class="cardTitle">{{ date.title }}</div>
       <br />
       <div class="cardCat">{{ date.category }}</div>

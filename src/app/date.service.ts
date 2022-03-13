@@ -34,7 +34,8 @@ export class DateService extends Dexie {
     date.done = !date.done;
     return this.dates.put(date);
   }
-
+  
+  
   async sync() {
     const allDates = await this.getAll();
     const syncedDates = await this.httpClient

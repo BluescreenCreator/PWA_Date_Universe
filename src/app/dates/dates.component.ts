@@ -30,10 +30,22 @@ export class DatesComponent implements OnInit {
 
   
   randomDate: RandomDate[] = [
-    { r_title: 'test', r_category: 'Romatic' },
-    { r_title: 'test1', r_category: 'Classic' },
-    { r_title: 'test2', r_category: 'Action' },
-    { r_title: 'test3', r_category: 'Humor' },
+    { r_title: 'Candle light Dinner', r_category: 'Romatic' },
+    { r_title: 'Sauna', r_category: 'Romatic' },
+    { r_title: 'Therme', r_category: 'Romatic' },
+    { r_title: 'Lagerfeuer', r_category: 'Romatic' },
+    { r_title: 'Autokino', r_category: 'Classic' },
+    { r_title: 'Weihnachtsmarkt', r_category: 'Classic' },
+    { r_title: 'Minigolf', r_category: 'Classic' },
+    { r_title: 'Picknick', r_category: 'Classic' },
+    { r_title: 'Wasserski', r_category: 'Action' },
+    { r_title: 'Fallschirm springen', r_category: 'Action' },
+    { r_title: 'Kanufahren', r_category: 'Action' },
+    { r_title: 'Schlittschuhlaufen', r_category: 'Action' },
+    { r_title: 'Haare schneiden', r_category: 'Humor' },
+    { r_title: 'Weinverkostung', r_category: 'Humor' },
+    { r_title: 'Cocktails mixen', r_category: 'Humor' },
+    { r_title: 'Jahrmarkt', r_category: 'Humor' },
   ];
 
   
@@ -71,13 +83,10 @@ export class DatesComponent implements OnInit {
   
 
   async createRandomDate() {
-    
-    let randomNumber = 0;
-    randomNumber = Math.floor((Math.random() * 4));
-    
-    this.randomDate.values.toString;
-
-    await this.dateService.add('test', 'romatic');
-    await this.loadDates();
+    var randomNumber = Math.floor(Math.random()*this.randomDate.length);
+    var randomDate = this.randomDate[randomNumber];
+    console.log(randomDate.r_category);
+    await this.dateService.add(randomDate.r_title, randomDate.r_category);
+    await this.loadDates()
   }
 }

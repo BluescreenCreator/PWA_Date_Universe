@@ -30,22 +30,22 @@ export class DatesComponent implements OnInit {
 
   
   randomDate: RandomDate[] = [
-    { r_title: 'Candle light Dinner', r_category: 'Romatic' },
-    { r_title: 'Sauna', r_category: 'Romatic' },
-    { r_title: 'Therme', r_category: 'Romatic' },
-    { r_title: 'Lagerfeuer', r_category: 'Romatic' },
-    { r_title: 'Autokino', r_category: 'Classic' },
-    { r_title: 'Weihnachtsmarkt', r_category: 'Classic' },
-    { r_title: 'Minigolf', r_category: 'Classic' },
-    { r_title: 'Picknick', r_category: 'Classic' },
-    { r_title: 'Wasserski', r_category: 'Action' },
-    { r_title: 'Fallschirm springen', r_category: 'Action' },
-    { r_title: 'Kanufahren', r_category: 'Action' },
-    { r_title: 'Schlittschuhlaufen', r_category: 'Action' },
-    { r_title: 'Haare schneiden', r_category: 'Humor' },
-    { r_title: 'Weinverkostung', r_category: 'Humor' },
-    { r_title: 'Cocktails mixen', r_category: 'Humor' },
-    { r_title: 'Jahrmarkt', r_category: 'Humor' },
+    { r_title: 'Candle light Dinner', r_category: 'romantic' },
+    { r_title: 'Sauna', r_category: 'romantic' },
+    { r_title: 'Therme', r_category: 'romantic' },
+    { r_title: 'Lagerfeuer', r_category: 'romantic' },
+    { r_title: 'Autokino', r_category: 'classic' },
+    { r_title: 'Weihnachtsmarkt', r_category: 'classic' },
+    { r_title: 'Minigolf', r_category: 'classic' },
+    { r_title: 'Picknick', r_category: 'classic' },
+    { r_title: 'Wasserski', r_category: 'action' },
+    { r_title: 'Fallschirm springen', r_category: 'action' },
+    { r_title: 'Kanufahren', r_category: 'action' },
+    { r_title: 'Schlittschuhlaufen', r_category: 'action' },
+    { r_title: 'Haare schneiden', r_category: 'humor' },
+    { r_title: 'Weinverkostung', r_category: 'humor' },
+    { r_title: 'Cocktails mixen', r_category: 'humor' },
+    { r_title: 'Jahrmarkt', r_category: 'humor' },
   ];
 
   

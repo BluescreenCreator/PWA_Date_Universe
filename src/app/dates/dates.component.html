@@ -76,8 +76,9 @@
 
 <div class="listSection">
   <ul>
-    <li *ngFor="let date of dates" [class.done]="date.done" class="dateCard">
-      <input type="checkbox" name="checkbox" [checked]="date.done" (click)="toggleDone(date)" />
+    <li *ngFor="let date of dates" [class.done]="date.done" 
+      [ngClass]="{'CardAction' : date.category == 'action', 'CardClassic' : date.category == 'classic', 'CardHumor' : date.category == 'humor','CardRomantic' : date.category == 'romantic'}">
+      <input type="checkbox" name="checkbox" [checked]="date.done" (click)="toggleDone(date)"/>
       <div class="cardTitle">{{ date.title }}</div>
       <br />
       <div class="cardCat">{{ date.category }}</div>

@@ -57,9 +57,78 @@ li {
   margin-top: 30px;
 }
 
-.dateCard {
+/*.dateCard {
   border-radius: 12px;
   background-color: #9b8ee3;
+  text-align: center;
+  width: 260px;
+  height: 150px;
+  display: inline-flex;
+  margin: 20px 40px 20px;
+  flex-wrap: wrap;
+  padding: 30px;
+  color: white;
+  font-size: 14pt;
+}*/
+
+.CardAction{
+  border-radius: 12px;
+  background-color: #D498F2;
+  text-align: center;
+  width: 260px;
+  height: 150px;
+  display: inline-flex;
+  margin: 20px 40px 20px;
+  flex-wrap: wrap;
+  padding: 30px;
+  color: white;
+  font-size: 14pt;
+}
+
+.CardRomantic{
+  border-radius: 12px;
+  background-color: #9b8ee3;
+  text-align: center;
+  width: 260px;
+  height: 150px;
+  display: inline-flex;
+  margin: 20px 40px 20px;
+  flex-wrap: wrap;
+  padding: 30px;
+  color: white;
+  font-size: 14pt;
+}
+
+.CardClassic{
+  border-radius: 12px;
+  background-color: #F274F2;
+  text-align: center;
+  width: 260px;
+  height: 150px;
+  display: inline-flex;
+  margin: 20px 40px 20px;
+  flex-wrap: wrap;
+  padding: 30px;
+  color: white;
+  font-size: 14pt;
+}
+
+.CardHumor{
+  border-radius: 12px;
+  background-color: #8EB5E3;
+  text-align: center;
+  width: 260px;
+  height: 150px;
+  display: inline-flex;
+  margin: 20px 40px 20px;
+  flex-wrap: wrap;
+  padding: 30px;
+  color: white;
+  font-size: 14pt;
+}
+.CardNull{
+  border-radius: 12px;
+  background-color: #7992AF;
   text-align: center;
   width: 260px;
   height: 150px;

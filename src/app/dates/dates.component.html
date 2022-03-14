@@ -13,8 +13,14 @@
   <h1>Find your</h1>
   <h4>perfect date</h4>
   <h1>tonight</h1>
+  <div class="line-container">
+    <div class="long-line"> </div>
+    <div class="small-line"> </div>
+    <div class="short-line"> </div>
+    <div class="long-line2"> </div>
+  </div>
   <h2>Never forget your best ideas ever again...</h2>
-  <span><img src="/assets/bilder/ufo4.png" width="420px" height="auto" /></span>
+  <span><img src="/assets/bilder/ufo4.png" width="420px" height="auto" style="float: right"/></span>
   <br />
   <br />
   <h3>You can add new date ideas here</h3>
@@ -84,13 +90,9 @@
 
 <div class="listSection">
   <ul>
-    <li *ngFor="let date of dates" [class.done]="date.done" class="dateCard">
-      <input
-        type="checkbox"
-        name="checkbox"
-        [checked]="date.done"
-        (click)="toggleDone(date)"
-      />
+    <li *ngFor="let date of dates" [class.done]="date.done" 
+      [ngClass]="{'CardAction' : date.category == 'action', 'CardClassic' : date.category == 'classic', 'CardHumor' : date.category == 'humor','CardRomantic' : date.category == 'romantic'}">
+      <input type="checkbox" name="checkbox" [checked]="date.done" (click)="toggleDone(date)"/>
       <div class="cardTitle">{{ date.title }}</div>
       <br />
       <div class="cardCat">{{ date.category }}</div>

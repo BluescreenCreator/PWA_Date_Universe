@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import Dexie from 'dexie';
@@ -24,9 +25,6 @@ export class DateService extends Dexie {
 
   add(title: string, category: string) {
     this.dates.add({ title, category, id: v4(), done: false });
-    /*if (category == "Action"){
-      document.getElementsByClassName('dateCard').style.backgroundColor
-    }*/ 
   }
 
   deleteDate(id: string) {
@@ -37,7 +35,6 @@ export class DateService extends Dexie {
     date.done = !date.done;
     return this.dates.put(date);
   }
-  
   
   async sync() {
     const allDates = await this.getAll();

@@ -25,18 +25,18 @@
   <br />
   <h3>You can add new date ideas here</h3>
 </div>
-<div class="inputSection">
+<div class="inputSection" required>
   <input
     #dateInput
     class="ideaInput"
-    placeholder="Your Date Idea"
+    placeholder="Your Date Idea *"
     aria-label="Enter Date Idea"
-    required="required"
+    required
   />
   <div class="category">
     <mat-form-field appearance="fill">
       <mat-label>Date Category</mat-label>
-      <mat-select #dateCategory>
+      <mat-select #dateCategory required>
         <mat-option value="romantic">Romantic</mat-option>
         <mat-option value="classic">Classic</mat-option>
         <mat-option value="action">Action</mat-option>
@@ -46,6 +46,7 @@
   </div>
   <button
     class="buttonAdd"
+    type="submit"
     mat-flat-button
     color="#E615BA"
     aria-label="Add your date idea"

@@ -22,7 +22,7 @@ export class DatesComponent implements OnInit {
   dates: Date[] = [];
 
   dateCategory: DateCategory[] = [
-    { value: 'romatic', viewValue: 'Romatic' },
+    { value: 'romantic', viewValue: 'Romantic' },
     { value: 'classic', viewValue: 'Classic' },
     { value: 'action', viewValue: 'Action' },
     { value: 'humor', viewValue: 'Humor' },

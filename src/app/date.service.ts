@@ -24,7 +24,18 @@ export class DateService extends Dexie {
   }
 
   add(title: string, category: string) {
-    this.dates.add({ title, category, id: v4(), done: false });
+    if (category == "action" || category == "humor" || category == "romantic" || category == "classic"){
+      if (title !== "") {
+        this.dates.add({ title, category, id: v4(), done: false });
+      } else {
+        alert("Please enter a title!")
+      }
+    } else if (title !== ""){
+      if(category == "action" || category == "humor" || category == "romantic" || category == "classic"){
+        this.dates.add({ title, category, id: v4(), done: false });
+      }else {
+        alert("Please enter a date category!")}
+    } else {alert("Please enter your date idea!")}
   }
 
   deleteDate(id: string) {

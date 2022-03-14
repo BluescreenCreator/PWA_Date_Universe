@@ -7,6 +7,12 @@ interface DateCategory {
   viewValue: string;
 }
 
+interface RandomDate {
+  r_title: string;
+  r_category: string;
+}
+
+
 @Component({
   selector: 'app-dates',
   templateUrl: './dates.component.html',
@@ -21,6 +27,28 @@ export class DatesComponent implements OnInit {
     { value: 'action', viewValue: 'Action' },
     { value: 'humor', viewValue: 'Humor' },
   ];
+
+  
+  randomDate: RandomDate[] = [
+    { r_title: 'Candle light Dinner', r_category: 'Romatic' },
+    { r_title: 'Sauna', r_category: 'Romatic' },
+    { r_title: 'Therme', r_category: 'Romatic' },
+    { r_title: 'Lagerfeuer', r_category: 'Romatic' },
+    { r_title: 'Autokino', r_category: 'Classic' },
+    { r_title: 'Weihnachtsmarkt', r_category: 'Classic' },
+    { r_title: 'Minigolf', r_category: 'Classic' },
+    { r_title: 'Picknick', r_category: 'Classic' },
+    { r_title: 'Wasserski', r_category: 'Action' },
+    { r_title: 'Fallschirm springen', r_category: 'Action' },
+    { r_title: 'Kanufahren', r_category: 'Action' },
+    { r_title: 'Schlittschuhlaufen', r_category: 'Action' },
+    { r_title: 'Haare schneiden', r_category: 'Humor' },
+    { r_title: 'Weinverkostung', r_category: 'Humor' },
+    { r_title: 'Cocktails mixen', r_category: 'Humor' },
+    { r_title: 'Jahrmarkt', r_category: 'Humor' },
+  ];
+
+  
 
   constructor(private dateService: DateService) {}
 
@@ -50,5 +78,13 @@ export class DatesComponent implements OnInit {
 
   async loadDates() {
     this.dates = await this.dateService.getAll();
+  }
+
+  async createRandomDate() {
+    var randomNumber = Math.floor(Math.random()*this.randomDate.length);
+    var randomDate = this.randomDate[randomNumber];
+    console.log(randomDate.r_category);
+    await this.dateService.add(randomDate.r_title, randomDate.r_category);
+    await this.loadDates()
   }
 }

@@ -26,7 +26,6 @@ ul {
   background-color: white !important;
   font-size: 14pt !important;
   border-radius: 12px !important;
-  padding-left: 10px !important;
   color: #e615ba !important;
 }
 
@@ -35,7 +34,7 @@ ul {
 }
 
 .mat-select {
-  margin-left: 10px;
+  margin-left: 6px;
 }
 
 .mat-form-field-hint-wrapper {

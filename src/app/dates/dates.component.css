@@ -102,6 +102,7 @@ li {
   width: 30px;
   border-radius: 12px;
   text-align: center;
+  margin-left: 200px;
 }
 
 .cardTitle {
@@ -113,4 +114,14 @@ li {
 .cardCat {
   min-width: 100%;
   font-size: 14pt;
+}
+
+.buttonAdd {
+  margin: 10px;
+  width: 53px;
+  height: 53px;
+}
+
+.randomDate {
+  margin-top: 0px;
 }

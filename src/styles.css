@@ -50,3 +50,11 @@ ul {
 .mat-select-arrow-wrapper {
   left: 15px;
 }
+
+.mat-form-field-appearance-fill .mat-form-field-infix {
+  padding: 5px 10px 10px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  padding: 0;
+}

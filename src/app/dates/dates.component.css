@@ -25,6 +25,14 @@ h4 {
   color: #e615ba;
   line-height: 50pt;
 }
+h5 {
+  font-size: 20pt;
+  margin-top: 40px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 30pt;
+}
 
 .headings {
   color: white;
@@ -56,20 +64,6 @@ input {
 li {
   margin-top: 30px;
 }
-
-/*.dateCard {
-  border-radius: 12px;
-  background-color: #9b8ee3;
-  text-align: center;
-  width: 260px;
-  height: 150px;
-  display: inline-flex;
-  margin: 20px 40px 20px 0px;
-  flex-wrap: wrap;
-  padding: 30px;
-  color: white;
-  font-size: 14pt;
-}*/
 
 .CardAction{
   border-radius: 12px;
@@ -116,19 +110,6 @@ li {
 .CardHumor{
   border-radius: 12px;
   background-color: #8EB5E3;
-  text-align: center;
-  width: 260px;
-  height: 150px;
-  display: inline-flex;
-  margin: 20px 40px 20px 0px;
-  flex-wrap: wrap;
-  padding: 30px;
-  color: white;
-  font-size: 14pt;
-}
-.CardNull{
-  border-radius: 12px;
-  background-color: #7992AF;
   text-align: center;
   width: 260px;
   height: 150px;
@@ -196,32 +177,3 @@ li {
   height: 45px;
 }
 
-/*date category*/
-.mat-form-field-label-wrapper{ 
-  top: -0.6em !important;
-  left: 0.6em !important;
-}
-
-.long-line{
-  background-color: #ffffff;
-  border-radius: 0.5em;
-  width: 3em;
-}
-
-.small-line{
-  background-color: #e615ba;
-  border-radius: 0.5em;
-  width: 1em;
-}
-
-.short-line{
-  background-color: #ffffff;
-  border-radius: 0.5em;
-  width: 0,5em;
-}
-
-.long-line2{
-  background-color: #e615ba;
-  border-radius: 0.5em;
-  width: 3em;
-}

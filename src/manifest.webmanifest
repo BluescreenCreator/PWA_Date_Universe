@@ -1,8 +1,8 @@
 {
   "name": "pwa-du",
   "short_name": "pwa-du",
-  "theme_color": "#1976d2",
-  "background_color": "#16034A",
+  "theme_color": "#16034a",
+  "background_color": "#16034a",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",

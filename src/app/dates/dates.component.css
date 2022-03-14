@@ -44,7 +44,7 @@ ul {
 button {
   background-color: #e615ba;
   color: white;
-  margin: 15px;
+  margin: 15px 0px 0px 30px;
   border-radius: 12px;
   font-size: 12pt;
 }
@@ -123,7 +123,7 @@ li {
 }
 
 .randomDate {
-  margin-top: 0px;
+  margin: 0px 0px opx;
   height: 45px;
 }
 

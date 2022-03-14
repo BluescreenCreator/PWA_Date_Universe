@@ -9,17 +9,6 @@
 </button>
 <br />
 
-<button
-  class="randomDate"
-  mat-flat-button
-  color="#E615BA"
-  aria-label="CreateRandomDate"
-  (click)="createRandomDate()"
->
-  RandomDateIdea
-</button>
-<br>
-
 <div class="headings">
   <h1>Find your</h1>
   <h4>perfect date</h4>
@@ -60,6 +49,25 @@
   </button>
 </div>
 
+<div class="headings">
+  <h3>
+    And if you don't have an idea at the moment, click here to add a suprise
+    date to your list
+  </h3>
+  <br />
+</div>
+
+<button
+  class="randomDate"
+  mat-flat-button
+  color="#E615BA"
+  aria-label="CreateRandomDate"
+  (click)="createRandomDate()"
+>
+  RandomDateIdea
+</button>
+<br />
+
 <span>
   <img
     src="/assets/bilder/ufo3.png"
@@ -77,14 +85,28 @@
 <div class="listSection">
   <ul>
     <li *ngFor="let date of dates" [class.done]="date.done" class="dateCard">
-      <input type="checkbox" name="checkbox" [checked]="date.done" (click)="toggleDone(date)" />
+      <input
+        type="checkbox"
+        name="checkbox"
+        [checked]="date.done"
+        (click)="toggleDone(date)"
+      />
       <div class="cardTitle">{{ date.title }}</div>
       <br />
       <div class="cardCat">{{ date.category }}</div>
       <br />
       <button class="btn" mat-flat-button (click)="deleteDate(date.id)">
-        <img src="/assets/bilder/herz.png" width="25px" height="auto" />
+        <img src="/assets/bilder/mulleimer.png" width="25px" height="auto" />
       </button>
     </li>
   </ul>
 </div>
+
+<span>
+  <img
+    src="/assets/bilder/ufo1.png"
+    width="220px"
+    height="auto"
+    style="float: right"
+  />
+</span>

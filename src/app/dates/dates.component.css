@@ -108,7 +108,7 @@ li {
 .cardTitle {
   min-width: 100%;
   font-size: 18pt;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .cardCat {
@@ -124,4 +124,5 @@ li {
 
 .randomDate {
   margin-top: 0px;
+  height: 45px;
 }

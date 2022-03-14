@@ -64,7 +64,7 @@ li {
   width: 260px;
   height: 150px;
   display: inline-flex;
-  margin: 20px 40px 20px;
+  margin: 20px 40px 20px 0px;
   flex-wrap: wrap;
   padding: 30px;
   color: white;

@@ -27,7 +27,6 @@ export class DatesComponent implements OnInit {
     { value: 'action', viewValue: 'Action' },
     { value: 'humor', viewValue: 'Humor' },
   ];
-
   
   randomDate: RandomDate[] = [
     { r_title: 'Candle light Dinner', r_category: 'romantic' },
@@ -48,7 +47,6 @@ export class DatesComponent implements OnInit {
     { r_title: 'Jahrmarkt', r_category: 'humor' },
   ];
 
-  
 
   constructor(private dateService: DateService) {}
 
@@ -83,7 +81,6 @@ export class DatesComponent implements OnInit {
   async createRandomDate() {
     var randomNumber = Math.floor(Math.random()*this.randomDate.length);
     var randomDate = this.randomDate[randomNumber];
-    console.log(randomDate.r_category);
     await this.dateService.add(randomDate.r_title, randomDate.r_category);
     await this.loadDates()
   }
